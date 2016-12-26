@@ -1,0 +1,10 @@
+say $*PERL;
+say $*PID;
+say $*PROGRAM-NAME;
+say $*EXECUTABLE;
+say $*VM;
+say $*DISTRO;
+say $*KERNEL;
+say $*CWD;
+say $*TZ;
+say %*ENV;
