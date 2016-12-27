@@ -1,0 +1,3 @@
+% my ($params) = @_;  
+
+Hi, <%= $params<name> %>! 
