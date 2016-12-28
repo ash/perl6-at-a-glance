@@ -23,5 +23,17 @@ grammar Lang {
         | <value> 
     } 
 
+    token identifier { 
+        <:alpha>+ 
+    }
+ 
+    token value { 
+        \d+ 
+    } 
 }
 
+
+my $parsed = Lang.parsefile('test.lang'); 
+#my $parsed = Lang.parse('x=7;print x');
+
+say $parsed;
