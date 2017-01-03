@@ -16,7 +16,7 @@ get / 'square-of/' (<digit>+) / => sub ($n) {
     $n * $n 
 } 
 
-get '/:name' => -> ($name) { 
+get '/:name' => -> $name { 
     "Hello, $name!" 
 } 
 
