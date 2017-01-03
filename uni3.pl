@@ -19,6 +19,7 @@ sub unidump($s) {
     say $s.NFKC; 
     say $s.NFKD; 
     say $s.uniname; # юникодное название буквы 
+    say $s.uniprop;
     say $s.NFD.list; # списком 
     say $s.encode('UTF-8').elems; # сколько байтов 
     say $s.encode('UTF-16').elems; 
