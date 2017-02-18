@@ -17,7 +17,7 @@ grammar Calc {
         '(' <expression> ')' 
     } 
     token value { 
-        | \d+['.' \d+]* 
+        | \d+['.' \d+]?
         | '.' \d+ 
     } 
 } 
